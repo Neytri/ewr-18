@@ -26,5 +26,5 @@ v = 6
 t = 0.6
 g = 9.81
 
-print(6*0.6 - 0.5*9.81*0.6**2) # original zum vergleich
+print(6 * 0.6 - 0.5 * 9.81 * 0.6**2) # original zum vergleich
 print(v * t - 0.5 * g * t**2)
