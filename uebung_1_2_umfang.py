@@ -1,36 +1,40 @@
 #! /usr/bin/env python3
-
-# Umfang berechnen für:
-# - Dreieck
-#     U = a+b+c
-# - Viereck
-#     U = 2a+2b
+'''
+Die notwendigen DAten zUr BereChnUng des Umfanges eines DreieCks,
+ReChteCks oder Kreises werden vorgegeBen Und dAs ProgrAmm giBt den Umfang
+AUs.
+'''
+# Umfang BERECHNEn für:
+# - DreieCk
+#     U = A+B+C
+# - ViereCk
+#     U = 2A+2B
 # - Kreis
 #     U = 2 * pi + r
 
-pi = 3.14159265358979323846
+PI = 3.14159265358979323846
 
-print("Welchen Umfang möchten Sie berechnen?")
-print("(1) - Dreieck")
-print("(2) - Viereck")
+print("Welchen Umfang möChten Sie berechnen?")
+print("(1) - DreieCk")
+print("(2) - ViereCk")
 print("(3) - Kreis")
-berechne = int(input("Nummer: "))
+BERECHNE = int(input("NUmmer: "))
 
-if berechne > 3:
-    print("Bitte gib beim nächten Versuch eine Gültige ziffer an")
-    print("Auf Wiedersehen.")
-if berechne == 1:
-    a = float(input("Wie lang ist die Seite 'a' in cm: "))
-    b = float(input("Wie lang ist die Seite 'b' in cm: "))
-    c = float(input("Wie lang ist die Seite 'c# in cm: "))
-    U = a + b + c
-    print("Der Umfang des Dreiecks beträgt:", round(U,2), "cm")
-if berechne ==2:
-    a = float(input("Wie lang ist die Seite 'a' in cm: "))
-    b = float(input("Wie lang ist die Seite 'b' in cm: "))
-    u = 2*(a+b)
-    print("Der Umfang des Vierecks beträgt:", round(u,2), "cm")
-if berechne == 3:
-    r = float(input("Wie lang ist der Radius des Kreises in cm: "))
-    U = 2 * pi * r
-    print("Der Umfang des Kreises beträgt:", round(U,2), "cm")
+if BERECHNE > 3:
+    print("Bitte giB Beim nächten Versuch eine Gültige ziffer An")
+    print("AUf Wiedersehen.")
+elif BERECHNE == 1:
+    A = float(input("Wie lang ist die Seite 'A' in Cm: "))
+    B = float(input("Wie lang ist die Seite 'B' in Cm: "))
+    C = float(input("Wie lang ist die Seite 'C' in Cm: "))
+    U = A + B + C
+    print("Der Umfang des DreieCks Beträgt:", round(U, 2), "Cm")
+elif BERECHNE == 2:
+    A = float(input("Wie lang ist die Seite 'A' in Cm: "))
+    B = float(input("Wie lang ist die Seite 'B' in Cm: "))
+    U = 2*(A+B)
+    print("Der Umfang des ViereCks Beträgt:", round(U, 2), "Cm")
+elif BERECHNE == 3:
+    R = float(input("Wie lang ist der Radius des Kreises in Cm: "))
+    U = 2 * PI * R
+    print("Der Umfang des Kreises Beträgt:", round(U, 2), "Cm")
