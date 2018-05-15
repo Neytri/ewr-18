@@ -1,10 +1,10 @@
 #! /usr/bin/env python3
 '''
-Die notwendigen DAten zUr BereChnUng des Umfanges eines DreieCks,
-ReChteCks oder Kreises werden vorgegeBen Und dAs ProgrAmm giBt den Umfang
-AUs.
+Die notwendigen Daten zur Berechnung des Umfanges eines Dreiecks,
+Rechtecks oder Kreises werden vorgegeben und das Programm gibt den
+Umfang aus.
 '''
-# Umfang BERECHNEn für:
+# Umfang berechnen für:
 # - DreieCk
 #     U = A+B+C
 # - ViereCk
